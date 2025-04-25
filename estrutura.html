@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura - Biblioteca de Práticas Ágeis - Algar Telecom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+    <script src="js/interactivity.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar / Menu Lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Biblioteca de Práticas</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">📊</span><span class="menu-text">Estratégias</span></a></li>
+                <li><a href="fluxo-trabalho.html"><span class="icon">🔄</span><span class="menu-text">Fluxo de Trabalho</span></a></li>
+                <li><a href="estrutura.html" class="active"><span class="icon">🏗️</span><span class="menu-text">Estrutura</span></a></li>
+                <li><a href="ferramentas.html"><span class="icon">🔧</span><span class="menu-text">Ferramentas</span></a></li>
+                <li><a href="valores.html"><span class="icon">💎</span><span class="menu-text">Valores</span></a></li>
+                <li><a href="relacionamento.html"><span class="icon">👥</span><span class="menu-text">Relacionamento</span></a></li>
+                <li><a href="aprendizagem.html"><span class="icon">🧠</span><span class="menu-text">Aprendizagem</span></a></li>
+                <li><a href="comunicacao.html"><span class="icon">💬</span><span class="menu-text">Comunicação</span></a></li>
+                <li><a href="rituais.html"><span class="icon">🔄</span><span class="menu-text">Rituais</span></a></li>
+                <li><a href="controles.html"><span class="icon">📋</span><span class="menu-text">Controles</span></a></li>
+                <li><a href="tomada-decisao.html"><span class="icon">🎯</span><span class="menu-text">Tomada de Decisão</span></a></li>
+                <li><a href="identidade.html"><span class="icon">🧩</span><span class="menu-text">Identidade</span></a></li>
+                <li><a href="qualidade.html"><span class="icon">✅</span><span class="menu-text">Qualidade</span></a></li>
+                <li><a href="modelo-negocio.html"><span class="icon">💼</span><span class="menu-text">Modelo de Negócio</span></a></li>
+                <li><a href="favoritos.html"><span class="icon">⭐</span><span class="menu-text">Favoritos</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="content">
+            <div class="header">
+                <h1>Estrutura</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar práticas...">
+                    <button>🔍</button>
+                </div>
+            </div>
+
+            <div class="search-results" style="display: none;"></div>
+
+            <!-- Propriedades -->
+            <h2 class="section-title">Propriedades</h2>
+            <div class="properties-section">
+                <div class="property-card fade-in">
+                    <h3>Propriedades</h3>
+                    <p>A Estrutura Organizacional em ambientes ágeis de telecomunicações define como as equipes são formadas, organizadas e interconectadas para maximizar a entrega de valor e a capacidade de resposta às mudanças.</p>
+                    <p>Em um setor que combina alta especialização técnica com necessidade de inovação constante, a estrutura deve equilibrar a profundidade de conhecimento especializado com a flexibilidade e colaboração multidisciplinar.</p>
+                    <p>A estrutura ideal facilita a comunicação eficiente, reduz dependências desnecessárias, promove a autonomia das equipes e permite escalabilidade sem perda de agilidade.</p>
+                </div>
+
+                <div class="property-card fade-in">
+                    <h3>Restrições</h3>
+                    <ul>
+                        <li>Estruturas organizacionais devem respeitar requisitos regulatórios do setor de telecomunicações</li>
+                        <li>Equipes técnicas especializadas precisam manter profundidade de conhecimento em seus domínios</li>
+                        <li>Funções críticas de segurança e conformidade devem ser claramente definidas</li>
+                        <li>Estruturas devem acomodar a operação contínua de serviços essenciais (24/7)</li>
+                        <li>Modelos organizacionais precisam considerar a integração com parceiros e fornecedores externos</li>
+                    </ul>
+                </div>
+
+                <div class="property-card fade-in">
+                    <h3>Recomendações</h3>
+                    <ul>
+                        <li>Priorizar estruturas que minimizem dependências entre equipes</li>
+                        <li>Criar mecanismos para compartilhamento de conhecimento especializado</li>
+                        <li>Estabelecer papéis claros de coordenação entre equipes interdependentes</li>
+                        <li>Implementar estruturas que permitam decisões descentralizadas</li>
+                        <li>Revisar e adaptar a estrutura organizacional periodicamente</li>
+                        <li>Equilibrar especialização técnica com visão de produto/serviço</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modelos de Estrutura Organizacional -->
+            <h2 class="section-title">Modelos de Estrutura Organizacional Ágil em Telecomunicações</h2>
+            
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <div class="tab-item active" data-tab="tab-squads">Squads</div>
+                    <div class="tab-item" data-tab="tab-tribos">Tribos e Capítulos</div>
+                    <div class="tab-item" data-tab="tab-comunidades">Comunidades de Prática</div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-squads" class="tab-panel active">
+                        <div class="practice-card" data-id="estrutura-1" data-categories="organizacao autonomia">
+                            <div class="practice-card-header">
+                                <span>Squads Multidisciplinares</span>
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                            <div class="practice-card-body">
+                                <h4>Descrição</h4>
+                                <p>Equipes pequenas (5-9 pessoas) e multidisciplinares, organizadas em torno de produtos ou serviços específicos, com todas as competências necessárias para entregar valor de ponta a ponta, desde o desenvolvimento até a operação.</p>
+                                
+                                <h4>Composição Típica em Telecomunicações</h4>
+                                <ul>
+                                    <li><strong>Engenheiros de Rede:</strong> Especialistas em infraestrutura de telecomunicações</li>
+                                    <li><strong>Desenvolvedores:</strong> Profissionais de software para sistemas de suporte</li>
+                                    <li><strong>Especialistas em Operações:</strong> Foco em monitoramento e estabilidade</li>
+                                    <li><strong>Analistas de Negócio:</strong> Tradutores entre requisitos técnicos e comerciais</li>
+                                    <li><strong>Especialistas em Experiência do Cliente:</strong> Foco na usabilidade e satisfação</li>
+                                    <li><strong>Especialistas em Regulação:</strong> Para garantir conformidade com normas do setor</li>
+                                </ul>
+                                
+                                <h4>Benefícios</h4>
+                                <ul>
+                                    <li>Maior autonomia e capacidade de decisão</li>
+                                    <li>Redução de dependências externas</li>
+                                    <li>Ciclos de feedback mais curtos</li>
+                                    <li>Maior alinhamento com objetivos de negócio</li>
+                                    <li>Melhor integração entre desenvolvimento e operações</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-tribos" class="tab-panel">
+                        <div class="practice-card" data-id="estrutura-2" data-categories="organizacao escalabilidade">
+                            <div class="practice-card-header">
+                                <span>Tribos, Squads e Capítulos</span>
+                                <span class="badge badge-advanced">Avançada</span>
+                            </div>
+                            <div class="practice-card-body">
+                                <h4>Descrição</h4>
+                                <p>Modelo organizacional em múltiplas camadas, onde Tribos agrupam Squads relacionados que trabalham em uma área de negócio comum, enquanto Capítulos reúnem especialistas de uma mesma disciplina técnica que atuam em diferentes Squads.</p>
+                                
+                                <h4>Estrutura em Telecomunicações</h4>
+                                <ul>
+                                    <li><strong>Tribos:</strong> Organizadas por domínios como "Rede Móvel", "Serviços Digitais", "Experiência do Cliente"</li>
+                                    <li><strong>Squads:</strong> Equipes multidisciplinares focadas em produtos/serviços específicos dentro da Tribo</li>
+                                    <li><strong>Capítulos:</strong> Comunidades de especialistas como "Engenharia de Rádio", "Desenvolvimento Backend", "DevOps"</li>
+                                    <li><strong>Guildas:</strong> Grupos de interesse que atravessam Tribos, como "Segurança", "Acessibilidade", "Performance"</li>
+                                </ul>
+                                
+                                <h4>Benefícios</h4>
+                                <ul>
+                                    <li>Escalabilidade para organizações maiores</li>
+                                    <li>Equilíbrio entre autonomia e alinhamento estratégico</li>
+                                    <li>Desenvolvimento de competências técnicas especializadas</li>
+                                    <li>Compartilhamento de conhecimento entre equipes</li>
+                                    <li>Padronização de práticas dentro de especialidades</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-comunidades" class="tab-panel">
+                        <div class="practice-card" data-id="estrutura-3" data-categories="conhecimento colaboracao">
+                            <div class="practice-card-header">
+                                <span>Comunidades de Prática em Telecomunicações</span>
+                            </div>
+                            <div class="practice-card-body">
+                                <h4>Descrição</h4>
+                                <p>Grupos formais ou informais que reúnem profissionais com interesses técnicos comuns para compartilhar conhecimento, desenvolver padrões e promover inovação em áreas específicas de telecomunicações.</p>
+                                
+                                <h4>Tipos de Comunidades em Telecomunicações</h4>
+                                <ul>
+                                    <li><strong>Comunidades Técnicas:</strong> Focadas em tecnologias específicas como 5G, Fibra Óptica, SDN/NFV</li>
+                                    <li><strong>Comunidades de Domínio:</strong> Organizadas por áreas como Segurança de Rede, Experiência Digital, IoT</li>
+                                    <li><strong>Comunidades de Prática:</strong> Centradas em disciplinas como Arquitetura, DevOps, SRE</li>
+                                    <li><strong>Comunidades de Inovação:</strong> Dedicadas a explorar tecnologias emergentes e novos modelos de negócio</li>
+                                </ul>
+                                
+                                <h4>Benefícios</h4>
+                                <ul>
+                                    <li>Desenvolvimento contínuo de competências especializadas</li>
+                                    <li>Criação e disseminação de melhores práticas</li>
+                                    <li>Resolução colaborativa de problemas complexos</li>
+                                    <li>Padronização técnica entre diferentes equipes</li>
+                                    <li>Aceleração da inovação em áreas específicas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Práticas de Estrutura Organizacional -->
+            <h2 class="section-title">Práticas de Estrutura Organizacional Ágil em Telecomunicações</h2>
+            
+            <div class="filters-container">
+                <div class="filters-title">Filtrar por:</div>
+                <div class="filters-options">
+                    <div class="filter-option active" data-filter="all">Todas</div>
+                    <div class="filter-option" data-filter="organizacao">Organização</div>
+                    <div class="filter-option" data-filter="autonomia">Autonomia</div>
+                    <div class="filter-option" data-filter="escalabilidade">Escalabilidade</div>
+                    <div class="filter-option" data-filter="conhecimento">Conhecimento</div>
+                </div>
+            </div>
+            
+            <div class="practices-grid">
+                <div class="practice-card" data-id="estrutura-4" data-categories="organizacao autonomia">
+                    <div class="practice-card-header">
+                        <span>Equipes Orientadas a Produto</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Organização de equipes em torno de produtos ou serviços completos, em vez de projetos ou funções técnicas, com responsabilidade de ponta a ponta pelo ciclo de vida do produto, desde o desenvolvimento até a operação.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Maior alinhamento com objetivos de negócio e necessidades do cliente</li>
+                            <li>Continuidade e visão de longo prazo para o produto</li>
+                            <li>Redução de transferências de conhecimento e handoffs</li>
+                            <li>Maior senso de propriedade e responsabilidade</li>
+                            <li>Melhor integração entre desenvolvimento e operações</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Especialmente eficaz para serviços digitais, aplicativos de autoatendimento e produtos de valor agregado que complementam os serviços de conectividade básica.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrutura-5" data-categories="escalabilidade conhecimento">
+                    <div class="practice-card-header">
+                        <span>Centros de Excelência Técnica</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Grupos especializados que mantêm profundidade de conhecimento em tecnologias críticas de telecomunicações, estabelecem padrões técnicos e oferecem consultoria interna para as equipes de produto.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Preservação de expertise técnica especializada</li>
+                            <li>Padronização de práticas e tecnologias</li>
+                            <li>Suporte técnico avançado para equipes de produto</li>
+                            <li>Aceleração da adoção de novas tecnologias</li>
+                            <li>Desenvolvimento de carreira para especialistas técnicos</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Fundamental para áreas como engenharia de rádio, redes ópticas, virtualização de rede e outras tecnologias complexas específicas do setor.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrutura-6" data-categories="autonomia escalabilidade">
+                    <div class="practice-card-header">
+                        <span>Plataformas Internas como Serviço</span>
+                        <span class="badge badge-new">Nova</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Criação de plataformas técnicas internas que oferecem serviços, APIs e ferramentas para as equipes de produto, reduzindo a complexidade e acelerando o desenvolvimento através de componentes reutilizáveis.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Redução de duplicação de esforços entre equipes</li>
+                            <li>Padronização de componentes e interfaces</li>
+                            <li>Aceleração do desenvolvimento de novos produtos</li>
+                            <li>Maior foco das equipes de produto em valor para o cliente</li>
+                            <li>Escalabilidade técnica e organizacional</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Ideal para criar abstrações sobre sistemas legados complexos, APIs de rede, serviços de billing e outros componentes técnicos específicos do setor.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrutura-7" data-categories="conhecimento colaboracao">
+                    <div class="practice-card-header">
+                        <span>Papéis de Integração Técnica</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Criação de papéis específicos para facilitar a integração entre equipes técnicas interdependentes, como Arquitetos de Solução, Engenheiros de Integração e Coordenadores Técnicos.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Melhor coordenação entre equipes especializadas</li>
+                            <li>Resolução mais rápida de dependências técnicas</li>
+                            <li>Visão sistêmica de soluções complexas</li>
+                            <li>Redução de retrabalho por problemas de integração</li>
+                            <li>Preservação da autonomia das equipes com coordenação eficaz</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Essencial em ambientes com múltiplas camadas tecnológicas interdependentes, como integração entre sistemas de rede, BSS/OSS e aplicações de cliente.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrutura-8" data-categories="organizacao escalabilidade">
+                    <div class="practice-card-header">
+                        <span>Estruturas Híbridas para Operações Críticas</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Modelo organizacional que combina equipes ágeis para desenvolvimento e inovação com estruturas mais tradicionais para operações críticas de rede, criando interfaces claras entre os dois modelos.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Equilíbrio entre inovação e estabilidade operacional</li>
+                            <li>Preservação da confiabilidade em sistemas críticos</li>
+                            <li>Adoção gradual de práticas ágeis em ambientes conservadores</li>
+                            <li>Gestão adequada de diferentes perfis de risco</li>
+                            <li>Transição controlada para modelos mais ágeis</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Particularmente relevante para operadoras com infraestrutura crítica de rede que precisam manter alta disponibilidade enquanto inovam em serviços digitais.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrutura-9" data-categories="autonomia conhecimento">
+                    <div class="practice-card-header">
+                        <span>Modelos de Governança Descentralizada</span>
+                        <span class="badge badge-advanced">Avançada</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Estruturas de governança que delegam autoridade decisória para as equipes, estabelecendo princípios, guardrails e mecanismos de coordenação em vez de controles hierárquicos tradicionais.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Maior velocidade na tomada de decisões</li>
+                            <li>Melhor adaptação a condições locais e específicas</li>
+                            <li>Aumento do engajamento e senso de propriedade</li>
+                            <li>Redução de gargalos decisórios</li>
+                            <li>Equilíbrio entre autonomia e alinhamento estratégico</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Aplicável para decisões de produto, tecnologia e operações que não envolvem riscos regulatórios significativos ou impactos em infraestrutura crítica.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagrama de Estrutura Organizacional -->
+            <div class="diagram-section">
+                <h2 class="section-title">Diagrama de Estrutura Organizacional Ágil para Telecomunicações</h2>
+                
+                <div class="diagram">
+                    <h3>Modelo de Estrutura Híbrida para Operadoras</h3>
+                    <div class="diagram-content">
+                        <div class="diagram-image">
+                            <!-- Representação visual da estrutura organizacional -->
+                            <svg width="800" height="500" viewBox="0 0 800 500">
+                                <!-- Fundo -->
+                                <rect x="0" y="0" width="800" height="500" fill="#f5f5f5" rx="10" ry="10" />
+                                
+                                <!-- Título -->
+                                <text x="400" y="40" font-size="24" text-anchor="middle" fill="#00B388" font-weight="bold">Estrutura Organizacional Ágil para Telecomunicações</text>
+                                
+                                <!-- Liderança -->
+                                <rect x="300" y="70" width="200" height="60" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="400" y="105" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Liderança Estratégica</text>
+                                
+                                <!-- Plataformas -->
+                                <rect x="300" y="150" width="200" height="60" fill="#C94A4A" rx="5" ry="5" opacity="0.8" />
+                                <text x="400" y="185" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Plataformas Internas</text>
+                                
+                                <!-- Tribos -->
+                                <rect x="100" y="230" width="180" height="60" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="190" y="265" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Tribo: Serviços Digitais</text>
+                                
+                                <rect x="310" y="230" width="180" height="60" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="400" y="265" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Tribo: Experiência Cliente</text>
+                                
+                                <rect x="520" y="230" width="180" height="60" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="610" y="265" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Tribo: Infraestrutura</text>
+                                
+                                <!-- Squads -->
+                                <rect x="70" y="310" width="100" height="50" fill="#00B388" rx="5" ry="5" opacity="0.6" />
+                                <text x="120" y="340" font-size="14" text-anchor="middle" fill="white">Squad: Apps</text>
+                                
+                                <rect x="190" y="310" width="100" height="50" fill="#00B388" rx="5" ry="5" opacity="0.6" />
+                                <text x="240" y="340" font-size="14" text-anchor="middle" fill="white">Squad: IoT</text>
+                                
+                                <rect x="310" y="310" width="100" height="50" fill="#00B388" rx="5" ry="5" opacity="0.6" />
+                                <text x="360" y="340" font-size="14" text-anchor="middle" fill="white">Squad: Portal</text>
+                                
+                                <rect x="430" y="310" width="100" height="50" fill="#00B388" rx="5" ry="5" opacity="0.6" />
+                                <text x="480" y="340" font-size="14" text-anchor="middle" fill="white">Squad: Canais</text>
+                                
+                                <rect x="550" y="310" width="100" height="50" fill="#00B388" rx="5" ry="5" opacity="0.6" />
+                                <text x="600" y="340" font-size="14" text-anchor="middle" fill="white">Squad: Rede</text>
+                                
+                                <rect x="670" y="310" width="100" height="50" fill="#00B388" rx="5" ry="5" opacity="0.6" />
+                                <text x="720" y="340" font-size="14" text-anchor="middle" fill="white">Squad: Cloud</text>
+                                
+                                <!-- Capítulos -->
+                                <rect x="100" y="380" width="600" height="50" fill="#C94A4A" rx="5" ry="5" opacity="0.6" />
+                                <text x="400" y="410" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Capítulos Técnicos (Especialidades)</text>
+                                
+                                <!-- Comunidades -->
+                                <rect x="100" y="440" width="600" height="40" fill="#666" rx="5" ry="5" opacity="0.6" />
+                                <text x="400" y="465" font-size="14" text-anchor="middle" fill="white">Comunidades de Prática (Transversais)</text>
+                                
+                                <!-- Conexões -->
+                                <line x1="400" y1="130" x2="400" y2="150" stroke="#666" stroke-width="2" />
+                                <line x1="400" y1="210" x2="400" y2="230" stroke="#666" stroke-width="2" />
+                                
+                                <line x1="190" y1="290" x2="190" y2="310" stroke="#666" stroke-width="2" />
+                                <line x1="190" y1="290" x2="120" y2="310" stroke="#666" stroke-width="2" />
+                                <line x1="190" y1="290" x2="240" y2="310" stroke="#666" stroke-width="2" />
+                                
+                                <line x1="400" y1="290" x2="400" y2="310" stroke="#666" stroke-width="2" />
+                                <line x1="400" y1="290" x2="360" y2="310" stroke="#666" stroke-width="2" />
+                                <line x1="400" y1="290" x2="480" y2="310" stroke="#666" stroke-width="2" />
+                                
+                                <line x1="610" y1="290" x2="610" y2="310" stroke="#666" stroke-width="2" />
+                                <line x1="610" y1="290" x2="600" y2="310" stroke="#666" stroke-width="2" />
+                                <line x1="610" y1="290" x2="720" y2="310" stroke="#666" stroke-width="2" />
+                                
+                                <line x1="120" y1="360" x2="120" y2="380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="240" y1="360" x2="240" y2="380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="360" y1="360" x2="360" y2="380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="480" y1="360" x2="480" y2="380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="600" y1="360" x2="600" y2="380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="720" y1="360" x2="720" y2="380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                                
+                                <line x1="400" y1="430" x2="400" y2="440" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                            </svg>
+                        </div>
+                        <div class="diagram-description">
+                            <p>O diagrama apresenta um modelo de Estrutura Organizacional Ágil adaptado para empresas de telecomunicações, combinando elementos do modelo Spotify (Tribos, Squads e Capítulos) com componentes específicos para o setor.</p>
+                            <p>A estrutura é organizada em múltiplas camadas, começando com a Liderança Estratégica no topo, responsável pela visão e direcionamento geral. Logo abaixo estão as Plataformas Internas, que fornecem serviços compartilhados e abstrações técnicas para as equipes de produto.</p>
+                            <p>As Tribos representam grandes áreas de negócio (Serviços Digitais, Experiência do Cliente e Infraestrutura), cada uma contendo múltiplos Squads focados em produtos ou serviços específicos. Os Capítulos Técnicos atravessam as Tribos horizontalmente, reunindo especialistas de uma mesma disciplina que atuam em diferentes Squads.</p>
+                            <p>Complementando a estrutura, as Comunidades de Prática funcionam como grupos transversais que compartilham conhecimento e estabelecem padrões em temas específicos que atravessam toda a organização.</p>
+                            <p>Este modelo equilibra a necessidade de especialização técnica profunda, característica do setor de telecomunicações, com a agilidade e autonomia necessárias para responder rapidamente às mudanças de mercado e demandas dos clientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case de Sucesso -->
+            <div class="case-study-section">
+                <h2 class="section-title">Case de Sucesso</h2>
+                
+                <div class="case-study">
+                    <h3>Transformação Organizacional na Vivo</h3>
+                    <div class="case-study-content">
+                        <div class="case-study-text">
+                            <p>A Vivo, uma das maiores operadoras de telecomunicações do Brasil, implementou uma transformação organizacional significativa para aumentar sua agilidade e capacidade de inovação em um mercado cada vez mais competitivo e dinâmico.</p>
+                            
+                            <h4>Desafio</h4>
+                            <p>A estrutura organizacional tradicional da empresa, com silos funcionais e hierarquias rígidas, estava dificultando a inovação e a resposta rápida às mudanças de mercado. A separação entre áreas técnicas e comerciais criava atritos e atrasos no desenvolvimento de novos produtos e serviços.</p>
+                            
+                            <h4>Solução</h4>
+                            <ul>
+                                <li>Implementação de um modelo híbrido inspirado no Spotify, com Tribos, Squads e Capítulos</li>
+                                <li>Criação de Squads multidisciplinares organizados por jornadas de cliente e produtos digitais</li>
+                                <li>Estabelecimento de Plataformas Internas para abstrair complexidade técnica</li>
+                                <li>Formação de Capítulos Técnicos para preservar especialização em tecnologias de telecomunicações</li>
+                                <li>Implementação de Comunidades de Prática para compartilhamento de conhecimento</li>
+                                <li>Desenvolvimento de um modelo de governança descentralizada com guardrails claros</li>
+                            </ul>
+                            
+                            <h4>Resultados</h4>
+                            <ul>
+                                <li>Redução de 60% no time-to-market para novos produtos digitais</li>
+                                <li>Aumento de 40% na satisfação dos colaboradores</li>
+                                <li>Melhoria de 25% no NPS (Net Promoter Score) dos clientes</li>
+                                <li>Crescimento de 35% na receita de serviços digitais</li>
+                                <li>Redução de 30% na rotatividade de talentos técnicos</li>
+                                <li>Maior capacidade de atração de profissionais de tecnologia</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-image">
+                            <!-- Representação visual do case de sucesso -->
+                            <svg width="350" height="350" viewBox="0 0 350 350">
+                                <!-- Fundo -->
+                                <rect x="0" y="0" width="350" height="350" fill="#f9f9f9" rx="10" ry="10" />
+                                
+                                <!-- Título -->
+                                <text x="175" y="40" font-size="18" text-anchor="middle" fill="#00B388" font-weight="bold">Resultados da Transformação</text>
+                                
+                                <!-- Gráfico de barras -->
+                                <line x1="50" y1="270" x2="300" y2="270" stroke="#666" stroke-width="1" />
+                                <line x1="50" y1="270" x2="50" y2="70" stroke="#666" stroke-width="1" />
+                                
+                                <!-- Barras -->
+                                <rect x="80" y="150" width="30" height="120" fill="#00B388" opacity="0.8" />
+                                <rect x="130" y="190" width="30" height="80" fill="#00B388" opacity="0.8" />
+                                <rect x="180" y="210" width="30" height="60" fill="#00B388" opacity="0.8" />
+                                <rect x="230" y="175" width="30" height="95" fill="#00B388" opacity="0.8" />
+                                <rect x="280" y="200" width="30" height="70" fill="#00B388" opacity="0.8" />
+                                
+                                <!-- Rótulos -->
+                                <text x="95" y="290" font-size="10" text-anchor="middle">Time-to-</text>
+                                <text x="95" y="305" font-size="10" text-anchor="middle">Market</text>
+                                
+                                <text x="145" y="290" font-size="10" text-anchor="middle">Satisfação</text>
+                                <text x="145" y="305" font-size="10" text-anchor="middle">Colaboradores</text>
+                                
+                                <text x="195" y="290" font-size="10" text-anchor="middle">NPS</text>
+                                <text x="195" y="305" font-size="10" text-anchor="middle">Clientes</text>
+                                
+                                <text x="245" y="290" font-size="10" text-anchor="middle">Receita</text>
+                                <text x="245" y="305" font-size="10" text-anchor="middle">Digital</text>
+                                
+                                <text x="295" y="290" font-size="10" text-anchor="middle">Retenção</text>
+                                <text x="295" y="305" font-size="10" text-anchor="middle">Talentos</text>
+                                
+                                <!-- Valores -->
+                                <text x="95" y="145" font-size="12" text-anchor="middle" font-weight="bold">-60%</text>
+                                <text x="145" y="185" font-size="12" text-anchor="middle" font-weight="bold">+40%</text>
+                                <text x="195" y="205" font-size="12" text-anchor="middle" font-weight="bold">+25%</text>
+                                <text x="245" y="170" font-size="12" text-anchor="middle" font-weight="bold">+35%</text>
+                                <text x="295" y="195" font-size="12" text-anchor="middle" font-weight="bold">-30%</text>
+                                
+                                <!-- Eixo Y -->
+                                <text x="45" y="75" font-size="10" text-anchor="end">100%</text>
+                                <text x="45" y="170" font-size="10" text-anchor="end">50%</text>
+                                <text x="45" y="270" font-size="10" text-anchor="end">0%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">Biblioteca de Práticas Ágeis</div>
+                    <div class="footer-links">
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 Algar Telecom. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elementos flutuantes -->
+    <div class="floating-actions">
+        <!-- Botões serão adicionados via JavaScript -->
+    </div>
+
+    <!-- Indicador de progresso de leitura -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>

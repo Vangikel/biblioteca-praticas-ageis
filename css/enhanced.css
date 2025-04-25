@@ -1,0 +1,451 @@
+/* Estilos adicionais para melhorar a experiência visual da biblioteca de práticas ágeis */
+
+/* Animações e transições */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Melhorias visuais para cards */
+.practice-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.practice-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--verde-algar-claro), var(--verde-algar));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.practice-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Badges para cards */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.badge-new {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.badge-popular {
+    background-color: #FF9800;
+    color: white;
+}
+
+.badge-advanced {
+    background-color: #9C27B0;
+    color: white;
+}
+
+/* Melhorias para diagramas */
+.diagram-image {
+    transition: transform 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.diagram-image::after {
+    content: '🔍';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.diagram-image:hover::after {
+    opacity: 1;
+}
+
+/* Melhorias para navegação */
+.sidebar-menu a {
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.sidebar-menu .active::after {
+    transform: scaleX(1);
+}
+
+/* Tooltips melhorados */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 100;
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Botões de ação flutuantes */
+.floating-actions {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.floating-action {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--verde-algar);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.floating-action:hover {
+    transform: translateY(-5px);
+    background-color: var(--verde-algar-escuro);
+}
+
+/* Indicador de progresso de leitura */
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f0f0f0;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--verde-algar);
+    width: 0;
+    transition: width 0.1s;
+}
+
+/* Estilos para notificações */
+.notification-center {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.notification {
+    background-color: white;
+    border-left: 4px solid var(--verde-algar);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    animation: slideInRight 0.3s, fadeOut 0.3s 2.7s forwards;
+}
+
+.notification-icon {
+    margin-right: 10px;
+    color: var(--verde-algar);
+}
+
+.notification-content {
+    flex-grow: 1;
+}
+
+.notification-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.notification-message {
+    font-size: 14px;
+    color: #666;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 16px;
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Estilos para filtros */
+.filters-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--verde-algar);
+}
+
+.filters-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-option {
+    padding: 5px 12px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-option:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-option.active {
+    background-color: var(--verde-algar);
+    color: white;
+}
+
+/* Estilos para tabs */
+.tabs-container {
+    margin: 20px 0;
+}
+
+.tabs-nav {
+    display: flex;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+}
+
+.tab-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--verde-algar);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.tab-item:hover::after {
+    transform: scaleX(0.5);
+}
+
+.tab-item.active {
+    color: var(--verde-algar);
+}
+
+.tab-item.active::after {
+    transform: scaleX(1);
+}
+
+.tab-content {
+    padding: 20px 0;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+/* Estilos para accordion */
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #f0f0f0;
+}
+
+.accordion-title {
+    font-weight: 500;
+}
+
+.accordion-icon {
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: #f0f0f0;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-item.active .accordion-content {
+    padding: 15px;
+    max-height: 1000px;
+}
+
+/* Estilos para impressão */
+@media print {
+    .sidebar,
+    .header,
+    .floating-actions,
+    .progress-container,
+    .footer {
+        display: none !important;
+    }
+    
+    .content {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+    
+    .practice-card,
+    .property-card,
+    .diagram,
+    .case-study {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .practice-card-header {
+        color: black !important;
+        background-color: #f0f0f0 !important;
+    }
+    
+    .btn {
+        display: none !important;
+    }
+    
+    @page {
+        margin: 2cm;
+    }
+}

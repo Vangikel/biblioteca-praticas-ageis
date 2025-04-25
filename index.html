@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Práticas Ágeis - Algar Telecom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+    <script src="js/interactivity.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar / Menu Lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Biblioteca de Práticas</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html" class="active"><span class="icon">📊</span><span class="menu-text">Estratégias</span></a></li>
+                <li><a href="fluxo-trabalho.html"><span class="icon">🔄</span><span class="menu-text">Fluxo de Trabalho</span></a></li>
+                <li><a href="estrutura.html"><span class="icon">🏗️</span><span class="menu-text">Estrutura</span></a></li>
+                <li><a href="ferramentas.html"><span class="icon">🔧</span><span class="menu-text">Ferramentas</span></a></li>
+                <li><a href="valores.html"><span class="icon">💎</span><span class="menu-text">Valores</span></a></li>
+                <li><a href="relacionamento.html"><span class="icon">👥</span><span class="menu-text">Relacionamento</span></a></li>
+                <li><a href="aprendizagem.html"><span class="icon">🧠</span><span class="menu-text">Aprendizagem</span></a></li>
+                <li><a href="comunicacao.html"><span class="icon">💬</span><span class="menu-text">Comunicação</span></a></li>
+                <li><a href="rituais.html"><span class="icon">🔄</span><span class="menu-text">Rituais</span></a></li>
+                <li><a href="controles.html"><span class="icon">📋</span><span class="menu-text">Controles</span></a></li>
+                <li><a href="tomada-decisao.html"><span class="icon">🎯</span><span class="menu-text">Tomada de Decisão</span></a></li>
+                <li><a href="identidade.html"><span class="icon">🧩</span><span class="menu-text">Identidade</span></a></li>
+                <li><a href="qualidade.html"><span class="icon">✅</span><span class="menu-text">Qualidade</span></a></li>
+                <li><a href="modelo-negocio.html"><span class="icon">💼</span><span class="menu-text">Modelo de Negócio</span></a></li>
+                <li><a href="favoritos.html"><span class="icon">⭐</span><span class="menu-text">Favoritos</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="content">
+            <div class="header">
+                <h1>Estratégias</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar práticas...">
+                    <button>🔍</button>
+                </div>
+            </div>
+
+            <div class="search-results" style="display: none;"></div>
+
+            <!-- Propriedades -->
+            <h2 class="section-title">Propriedades</h2>
+            <div class="properties-section">
+                <div class="property-card fade-in">
+                    <h3>Propriedades</h3>
+                    <p>Estratégia é o rumo que a Algar mira para obter sucesso no mercado.</p>
+                    <p>É essencial que nossa Estratégia seja clara, consistente, divulgada e compreendida por todos os envolvidos na organização.</p>
+                    <p>Ela deve ser pensada considerando todas as instâncias da empresa, apoiada na Cultura Organizacional, nos nossos valores e na nossa missão, de forma a garantir que tenhamos uma orientação bem estabelecida, mas que também permita eventuais reorganizações de rota - quando isso se fizer necessário.</p>
+                    <p>A Estratégia da Algar deve considerar uma perspectiva de ambidestria, considerando o presente e a perenidade da empresa.</p>
+                </div>
+
+                <div class="property-card fade-in">
+                    <h3>Restrições</h3>
+                    <ul>
+                        <li>A Estratégia Organizacional deve ser bem definida, clara a todos e manter-se viva, considerando o médio e longo prazo, deve ser respeitada e sustentada.</li>
+                        <li>Desdobramentos e adaptações surgirão, mas elas devem constantemente revisitar a Estratégia Organizacional antes de segmentar novas orientações.</li>
+                        <li>As instâncias organizacionais devem sempre se guiar pela Estratégia Organizacional.</li>
+                        <li>A Estratégia deve ser revista em ciclos curtos para garantir a sua atualização.</li>
+                    </ul>
+                </div>
+
+                <div class="property-card fade-in">
+                    <h3>Recomendações</h3>
+                    <ul>
+                        <li>Unificar os indicadores estratégicos sob uma metodologia única, para garantir clareza, coerência e comparabilidade dos resultados.</li>
+                        <li>Garantir que a cultura organizacional seja refletida na estratégia.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Práticas Ágeis para Estratégias em Telecomunicações -->
+            <h2 class="section-title">Práticas Ágeis para Estratégias em Telecomunicações</h2>
+            
+            <div class="filters-container">
+                <div class="filters-title">Filtrar por:</div>
+                <div class="filters-options">
+                    <div class="filter-option active" data-filter="all">Todas</div>
+                    <div class="filter-option" data-filter="planejamento">Planejamento</div>
+                    <div class="filter-option" data-filter="execucao">Execução</div>
+                    <div class="filter-option" data-filter="monitoramento">Monitoramento</div>
+                    <div class="filter-option" data-filter="adaptacao">Adaptação</div>
+                </div>
+            </div>
+            
+            <div class="practices-grid">
+                <div class="practice-card" data-id="estrategia-1" data-categories="planejamento adaptacao">
+                    <div class="practice-card-header">
+                        <span>OKRs Adaptáveis</span>
+                        <span class="badge badge-popular">Popular</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Implementação de Objetivos e Resultados-Chave (OKRs) com ciclos trimestrais de revisão, permitindo ajustes rápidos à estratégia em resposta às mudanças do mercado de telecomunicações.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Alinhamento estratégico com flexibilidade tática</li>
+                            <li>Ciclos curtos de feedback e adaptação</li>
+                            <li>Transparência nos objetivos organizacionais</li>
+                            <li>Foco em resultados mensuráveis</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Especialmente eficaz para alinhar equipes técnicas e comerciais em torno de objetivos comuns como expansão de rede, melhoria de NPS e lançamento de novos serviços digitais.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrategia-2" data-categories="planejamento monitoramento">
+                    <div class="practice-card-header">
+                        <span>Roadmapping Dinâmico</span>
+                        <span class="badge badge-new">Nova</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Criação de roadmaps estratégicos com horizontes variáveis (90 dias, 6 meses, 1 ano) que são revisados mensalmente, permitindo ajustes baseados em dados de mercado e feedback de clientes.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Visibilidade de curto e longo prazo</li>
+                            <li>Adaptabilidade a mudanças regulatórias</li>
+                            <li>Priorização contínua de iniciativas</li>
+                            <li>Alinhamento entre tecnologia e negócio</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Ideal para planejar lançamentos de produtos, expansões de infraestrutura e atualizações tecnológicas em um setor com rápida evolução tecnológica.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrategia-3" data-categories="execucao adaptacao">
+                    <div class="practice-card-header">
+                        <span>Estratégia como Hipótese</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Abordagem que trata elementos estratégicos como hipóteses a serem validadas através de experimentos de mercado, MVPs e testes A/B antes de grandes investimentos.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Redução de riscos em investimentos estratégicos</li>
+                            <li>Validação baseada em dados reais</li>
+                            <li>Cultura de aprendizado e experimentação</li>
+                            <li>Maior agilidade na tomada de decisões</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Particularmente útil para testar novos modelos de serviço, pacotes de produtos ou estratégias de atendimento antes de escalá-los nacionalmente.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrategia-4" data-categories="monitoramento adaptacao">
+                    <div class="practice-card-header">
+                        <span>Radar Tecnológico</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Ferramenta visual que mapeia tecnologias emergentes, estabelecidas e em declínio, ajudando a priorizar investimentos e identificar oportunidades estratégicas no setor de telecomunicações.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Visão compartilhada do futuro tecnológico</li>
+                            <li>Antecipação de tendências de mercado</li>
+                            <li>Priorização de investimentos em P&D</li>
+                            <li>Alinhamento entre estratégia e inovação</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Essencial para acompanhar evoluções como 5G, IoT, edge computing e outras tecnologias que impactam diretamente o setor de telecomunicações.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrategia-5" data-categories="execucao monitoramento">
+                    <div class="practice-card-header">
+                        <span>Células Estratégicas Multidisciplinares</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Formação de pequenas equipes multidisciplinares dedicadas a objetivos estratégicos específicos, com autonomia para tomar decisões e implementar soluções.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Execução acelerada de iniciativas estratégicas</li>
+                            <li>Quebra de silos organizacionais</li>
+                            <li>Maior engajamento das equipes</li>
+                            <li>Decisões mais rápidas e informadas</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Eficaz para desafios complexos como transformação digital, expansão para novas regiões ou desenvolvimento de soluções B2B personalizadas.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="estrategia-6" data-categories="planejamento execucao">
+                    <div class="practice-card-header">
+                        <span>Portfólio Ágil de Investimentos</span>
+                        <span class="badge badge-advanced">Avançada</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Gestão de portfólio de investimentos estratégicos com alocação dinâmica de recursos, revisões trimestrais e financiamento incremental baseado em resultados.</p>
+                        
+                        <h4>Benefícios</h4>
+                        <ul>
+                            <li>Otimização contínua do retorno sobre investimento</li>
+                            <li>Redução de riscos financeiros</li>
+                            <li>Maior flexibilidade orçamentária</li>
+                            <li>Alinhamento entre investimentos e resultados</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Ideal para gerenciar investimentos em infraestrutura de rede, expansão de cobertura e desenvolvimento de novos serviços digitais com maior agilidade.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagrama de Framework Estratégico -->
+            <div class="diagram-section">
+                <h2 class="section-title">Framework de Estratégia Ágil para Telecomunicações</h2>
+                
+                <div class="diagram">
+                    <h3>Jornada Estratégica Algar</h3>
+                    <div class="diagram-content">
+                        <div class="diagram-image">
+                            <!-- Representação visual do framework estratégico -->
+                            <svg width="800" height="400" viewBox="0 0 800 400">
+                                <!-- Fundo -->
+                                <rect x="0" y="0" width="800" height="400" fill="#f5f5f5" rx="10" ry="10" />
+                                
+                                <!-- Título -->
+                                <text x="400" y="40" font-size="24" text-anchor="middle" fill="#00B388" font-weight="bold">Jornada Estratégica Algar</text>
+                                
+                                <!-- Caixas principais -->
+                                <rect x="50" y="80" width="160" height="80" fill="#00B388" rx="5" ry="5" />
+                                <text x="130" y="125" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Definir a Estratégia do Time</text>
+                                
+                                <rect x="230" y="80" width="160" height="80" fill="#00B388" rx="5" ry="5" />
+                                <text x="310" y="125" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Monitorar e Acompanhar</text>
+                                
+                                <rect x="410" y="80" width="160" height="80" fill="#00B388" rx="5" ry="5" />
+                                <text x="490" y="125" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Revisar a Estratégia</text>
+                                
+                                <rect x="590" y="80" width="160" height="80" fill="#00B388" rx="5" ry="5" />
+                                <text x="670" y="125" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Conectar-se à Estratégia Algar</text>
+                                
+                                <!-- Setas de conexão -->
+                                <path d="M210 120 L230 120" stroke="#666" stroke-width="2" />
+                                <path d="M390 120 L410 120" stroke="#666" stroke-width="2" />
+                                <path d="M570 120 L590 120" stroke="#666" stroke-width="2" />
+                                
+                                <!-- Itens da primeira coluna -->
+                                <rect x="50" y="180" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="130" y="205" font-size="12" text-anchor="middle">Estude e reflita sobre a nossa missão e propósito de existir</text>
+                                
+                                <rect x="50" y="230" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="130" y="255" font-size="12" text-anchor="middle">Conheça o que norteia a nossa cultura</text>
+                                
+                                <rect x="50" y="280" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="130" y="305" font-size="12" text-anchor="middle">Estude e defina os indicadores do seu negócio</text>
+                                
+                                <rect x="50" y="330" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="130" y="355" font-size="12" text-anchor="middle">Facilite e execute uma direção estratégica junto ao seu time</text>
+                                
+                                <!-- Itens da segunda coluna -->
+                                <rect x="230" y="180" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="310" y="205" font-size="12" text-anchor="middle">Defina uma rotina de acompanhamento de resultados</text>
+                                
+                                <rect x="230" y="230" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="310" y="255" font-size="12" text-anchor="middle">Facilite uma reunião de acompanhamento de resultados</text>
+                                
+                                <rect x="230" y="280" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="310" y="305" font-size="12" text-anchor="middle">Comunique a sua estratégia para a Algar. Atualize nosso sistema de estratégia</text>
+                                
+                                <!-- Itens da terceira coluna -->
+                                <rect x="410" y="180" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="490" y="205" font-size="12" text-anchor="middle">Apure e consolide o resultado alcançado até o momento</text>
+                                
+                                <rect x="410" y="230" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="490" y="255" font-size="12" text-anchor="middle">Facilite uma reunião de revisão de resultados</text>
+                                
+                                <rect x="410" y="280" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="490" y="305" font-size="12" text-anchor="middle">Revise o orçamento necessário para atingir os objetivos do próximo ciclo</text>
+                                
+                                <!-- Itens da quarta coluna -->
+                                <rect x="590" y="180" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="670" y="205" font-size="12" text-anchor="middle">Defina a dependência de outros times ou áreas necessárias para nossos objetivos</text>
+                                
+                                <rect x="590" y="230" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="670" y="255" font-size="12" text-anchor="middle">Compartilhe objetivos estratégicos com outros times ou áreas</text>
+                                
+                                <rect x="590" y="280" width="160" height="40" fill="white" stroke="#00B388" stroke-width="1" rx="3" ry="3" />
+                                <text x="670" y="305" font-size="12" text-anchor="middle">Se prepare para o planejamento sincronizado da Algar</text>
+                            </svg>
+                        </div>
+                        <div class="diagram-description">
+                            <p>O Framework de Estratégia Ágil para Telecomunicações da Algar integra práticas ágeis ao planejamento estratégico tradicional, permitindo maior adaptabilidade em um setor em constante evolução. Este modelo estrutura-se em quatro pilares fundamentais que formam um ciclo contínuo de planejamento, execução, monitoramento e adaptação.</p>
+                            <p>A jornada estratégica começa com a definição clara da estratégia alinhada à missão organizacional, passa pelo monitoramento constante de resultados, revisão periódica para ajustes necessários, e finalmente conecta-se à estratégia global da Algar, garantindo alinhamento em todos os níveis da organização.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case de Sucesso -->
+            <div class="case-study-section">
+                <h2 class="section-title">Case de Sucesso</h2>
+                
+                <div class="case-study">
+                    <h3>Transformação Estratégica Ágil na Vivo</h3>
+                    <div class="case-study-content">
+                        <div class="case-study-text">
+                            <p>A Vivo, uma das maiores empresas de telecomunicações do Brasil, implementou uma abordagem ágil para sua estratégia corporativa, transformando a maneira como planeja e executa iniciativas estratégicas em um mercado altamente competitivo e em rápida evolução.</p>
+                            
+                            <h4>Desafio</h4>
+                            <p>Com ciclos de planejamento estratégico anuais rígidos, a empresa enfrentava dificuldades para responder rapidamente às mudanças de mercado, novas tecnologias e demandas dos clientes. Os planos estratégicos frequentemente se tornavam obsoletos antes mesmo de serem totalmente implementados.</p>
+                            
+                            <h4>Solução</h4>
+                            <ul>
+                                <li>Implementação de OKRs (Objetivos e Resultados-Chave) em toda a organização</li>
+                                <li>Criação de "células estratégicas" multidisciplinares focadas em objetivos específicos</li>
+                                <li>Adoção de ciclos trimestrais de revisão estratégica</li>
+                                <li>Desenvolvimento de um "radar tecnológico" para monitoramento contínuo de tendências</li>
+                                <li>Implementação de um portfólio ágil de investimentos com financiamento incremental</li>
+                            </ul>
+                            
+                            <h4>Resultados</h4>
+                            <ul>
+                                <li>Redução de 40% no tempo de lançamento de novas iniciativas estratégicas</li>
+                                <li>Aumento de 25% no ROI de investimentos estratégicos</li>
+                                <li>Melhoria significativa na capacidade de resposta a mudanças regulatórias</li>
+                                <li>Maior alinhamento entre equipes técnicas e comerciais</li>
+                                <li>Aumento de 30% na satisfação dos colaboradores com a clareza estratégica</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-image">
+                            <!-- Representação visual do case de sucesso -->
+                            <svg width="350" height="350" viewBox="0 0 350 350">
+                                <!-- Fundo -->
+                                <rect x="0" y="0" width="350" height="350" fill="#f9f9f9" rx="10" ry="10" />
+                                
+                                <!-- Título -->
+                                <text x="175" y="40" font-size="18" text-anchor="middle" fill="#00B388" font-weight="bold">Resultados da Transformação</text>
+                                
+                                <!-- Gráfico de barras -->
+                                <rect x="50" y="70" width="250" height="200" fill="white" stroke="#ddd" stroke-width="1" />
+                                
+                                <!-- Eixo Y -->
+                                <line x1="50" y1="70" x2="50" y2="270" stroke="#666" stroke-width="1" />
+                                <text x="45" y="75" font-size="10" text-anchor="end">100%</text>
+                                <text x="45" y="125" font-size="10" text-anchor="end">75%</text>
+                                <text x="45" y="175" font-size="10" text-anchor="end">50%</text>
+                                <text x="45" y="225" font-size="10" text-anchor="end">25%</text>
+                                <text x="45" y="270" font-size="10" text-anchor="end">0%</text>
+                                
+                                <!-- Barras "Antes" -->
+                                <rect x="80" y="170" width="30" height="100" fill="#ccc" />
+                                <rect x="140" y="190" width="30" height="80" fill="#ccc" />
+                                <rect x="200" y="150" width="30" height="120" fill="#ccc" />
+                                <rect x="260" y="200" width="30" height="70" fill="#ccc" />
+                                
+                                <!-- Barras "Depois" -->
+                                <rect x="110" y="110" width="30" height="160" fill="#00B388" />
+                                <rect x="170" y="90" width="30" height="180" fill="#00B388" />
+                                <rect x="230" y="90" width="30" height="180" fill="#00B388" />
+                                <rect x="290" y="130" width="30" height="140" fill="#00B388" />
+                                
+                                <!-- Legendas -->
+                                <rect x="80" y="290" width="15" height="15" fill="#ccc" />
+                                <text x="100" y="302" font-size="12" text-anchor="start">Antes</text>
+                                
+                                <rect x="150" y="290" width="15" height="15" fill="#00B388" />
+                                <text x="170" y="302" font-size="12" text-anchor="start">Depois</text>
+                                
+                                <!-- Rótulos -->
+                                <text x="95" y="285" font-size="10" text-anchor="middle">Tempo de Lançamento</text>
+                                <text x="155" y="285" font-size="10" text-anchor="middle">ROI</text>
+                                <text x="215" y="285" font-size="10" text-anchor="middle">Alinhamento</text>
+                                <text x="275" y="285" font-size="10" text-anchor="middle">Satisfação</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">Biblioteca de Práticas Ágeis</div>
+                    <div class="footer-links">
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 Algar Telecom. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elementos flutuantes -->
+    <div class="floating-actions">
+        <!-- Botões serão adicionados via JavaScript -->
+    </div>
+
+    <!-- Indicador de progresso de leitura -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>

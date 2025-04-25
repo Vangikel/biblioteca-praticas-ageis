@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas - Biblioteca de Práticas Ágeis - Algar Telecom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+    <script src="js/interactivity.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar / Menu Lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Biblioteca de Práticas</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">📊</span><span class="menu-text">Estratégias</span></a></li>
+                <li><a href="fluxo-trabalho.html"><span class="icon">🔄</span><span class="menu-text">Fluxo de Trabalho</span></a></li>
+                <li><a href="estrutura.html"><span class="icon">🏗️</span><span class="menu-text">Estrutura</span></a></li>
+                <li><a href="ferramentas.html" class="active"><span class="icon">🔧</span><span class="menu-text">Ferramentas</span></a></li>
+                <li><a href="valores.html"><span class="icon">💎</span><span class="menu-text">Valores</span></a></li>
+                <li><a href="relacionamento.html"><span class="icon">👥</span><span class="menu-text">Relacionamento</span></a></li>
+                <li><a href="aprendizagem.html"><span class="icon">🧠</span><span class="menu-text">Aprendizagem</span></a></li>
+                <li><a href="comunicacao.html"><span class="icon">💬</span><span class="menu-text">Comunicação</span></a></li>
+                <li><a href="rituais.html"><span class="icon">🔄</span><span class="menu-text">Rituais</span></a></li>
+                <li><a href="controles.html"><span class="icon">📋</span><span class="menu-text">Controles</span></a></li>
+                <li><a href="tomada-decisao.html"><span class="icon">🎯</span><span class="menu-text">Tomada de Decisão</span></a></li>
+                <li><a href="identidade.html"><span class="icon">🧩</span><span class="menu-text">Identidade</span></a></li>
+                <li><a href="qualidade.html"><span class="icon">✅</span><span class="menu-text">Qualidade</span></a></li>
+                <li><a href="modelo-negocio.html"><span class="icon">💼</span><span class="menu-text">Modelo de Negócio</span></a></li>
+                <li><a href="favoritos.html"><span class="icon">⭐</span><span class="menu-text">Favoritos</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="content">
+            <div class="header">
+                <h1>Ferramentas</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar práticas...">
+                    <button>🔍</button>
+                </div>
+            </div>
+
+            <div class="search-results" style="display: none;"></div>
+
+            <!-- Propriedades -->
+            <h2 class="section-title">Propriedades</h2>
+            <div class="properties-section">
+                <div class="property-card fade-in">
+                    <h3>Propriedades</h3>
+                    <p>As Ferramentas em ambientes ágeis de telecomunicações são os recursos tecnológicos que apoiam e potencializam as práticas ágeis, permitindo maior eficiência, colaboração e automação nos processos de desenvolvimento e operação.</p>
+                    <p>Em um setor que combina alta complexidade técnica com necessidade de inovação constante, as ferramentas devem equilibrar robustez para lidar com sistemas críticos e flexibilidade para adaptação rápida.</p>
+                    <p>O conjunto ideal de ferramentas facilita a colaboração entre equipes multidisciplinares, automatiza tarefas repetitivas, fornece visibilidade sobre o trabalho e métricas, e integra-se com os sistemas legados específicos do setor.</p>
+                </div>
+
+                <div class="property-card fade-in">
+                    <h3>Restrições</h3>
+                    <ul>
+                        <li>Ferramentas devem atender a requisitos de segurança e conformidade do setor de telecomunicações</li>
+                        <li>Necessidade de integração com sistemas legados e específicos do setor</li>
+                        <li>Suporte a alta disponibilidade para ferramentas que apoiam operações críticas</li>
+                        <li>Capacidade de lidar com grandes volumes de dados operacionais</li>
+                        <li>Compatibilidade com processos regulatórios específicos do setor</li>
+                    </ul>
+                </div>
+
+                <div class="property-card fade-in">
+                    <h3>Recomendações</h3>
+                    <ul>
+                        <li>Priorizar ferramentas que facilitem a colaboração entre equipes técnicas e de negócio</li>
+                        <li>Implementar ferramentas de automação para reduzir trabalho manual e erros</li>
+                        <li>Adotar soluções que forneçam visibilidade em tempo real sobre métricas operacionais</li>
+                        <li>Selecionar ferramentas com APIs robustas para integração com ecossistema existente</li>
+                        <li>Equilibrar ferramentas especializadas para telecomunicações com soluções ágeis genéricas</li>
+                        <li>Considerar a experiência do usuário para garantir adoção pelas equipes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Categorias de Ferramentas -->
+            <h2 class="section-title">Categorias de Ferramentas para Agilidade em Telecomunicações</h2>
+            
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <div class="tab-item active" data-tab="tab-gerenciamento">Gerenciamento de Projetos</div>
+                    <div class="tab-item" data-tab="tab-desenvolvimento">Desenvolvimento e CI/CD</div>
+                    <div class="tab-item" data-tab="tab-monitoramento">Monitoramento</div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-gerenciamento" class="tab-panel active">
+                        <div class="practice-card" data-id="ferramentas-1" data-categories="colaboracao visibilidade">
+                            <div class="practice-card-header">
+                                <span>Ferramentas de Gerenciamento Ágil para Telecomunicações</span>
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                            <div class="practice-card-body">
+                                <h4>Descrição</h4>
+                                <p>Ferramentas especializadas para gerenciamento de projetos e produtos ágeis, adaptadas para o contexto de telecomunicações, com suporte a múltiplas metodologias (Scrum, Kanban, SAFe) e funcionalidades específicas para o setor.</p>
+                                
+                                <h4>Ferramentas Recomendadas</h4>
+                                <ul>
+                                    <li><strong>Jira + Complementos para Telecom:</strong> Com plugins específicos para gestão de requisitos regulatórios e integração com sistemas OSS/BSS</li>
+                                    <li><strong>Azure DevOps:</strong> Para ambientes que utilizam tecnologias Microsoft e necessitam de integração com ferramentas de desenvolvimento</li>
+                                    <li><strong>ServiceNow Agile Development:</strong> Para organizações que já utilizam ServiceNow para ITSM e desejam integração com gestão de incidentes</li>
+                                    <li><strong>Monday.com:</strong> Para equipes que precisam de flexibilidade e personalização visual</li>
+                                    <li><strong>Planview AgilePlace (LeanKit):</strong> Especializado em visualização de fluxo de valor para equipes de operações</li>
+                                </ul>
+                                
+                                <h4>Adaptações para Telecomunicações</h4>
+                                <ul>
+                                    <li>Campos personalizados para requisitos regulatórios da Anatel</li>
+                                    <li>Integrações com sistemas de ticketing de operações de rede</li>
+                                    <li>Templates específicos para projetos de expansão de rede e lançamento de serviços</li>
+                                    <li>Dashboards para métricas específicas do setor (disponibilidade, SLAs regulatórios)</li>
+                                    <li>Fluxos de trabalho adaptados para aprovações técnicas e regulatórias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-desenvolvimento" class="tab-panel">
+                        <div class="practice-card" data-id="ferramentas-2" data-categories="automacao integracao">
+                            <div class="practice-card-header">
+                                <span>Ferramentas de Desenvolvimento e CI/CD para Telecom</span>
+                            </div>
+                            <div class="practice-card-body">
+                                <h4>Descrição</h4>
+                                <p>Conjunto de ferramentas para desenvolvimento, integração contínua e entrega contínua, adaptadas para os desafios específicos de telecomunicações, incluindo automação de testes para sistemas críticos e integração com ambientes de rede.</p>
+                                
+                                <h4>Ferramentas Recomendadas</h4>
+                                <ul>
+                                    <li><strong>GitLab CI/CD:</strong> Com runners especializados para automação de testes de rede</li>
+                                    <li><strong>Jenkins + Plugins Telecom:</strong> Para orquestração de pipelines complexos com integrações específicas do setor</li>
+                                    <li><strong>Ansible Tower:</strong> Para automação de configuração de infraestrutura de rede</li>
+                                    <li><strong>Terraform + Módulos Telecom:</strong> Para infraestrutura como código incluindo recursos específicos de provedores de nuvem para telecomunicações</li>
+                                    <li><strong>SonarQube:</strong> Com perfis de qualidade específicos para aplicações críticas de telecomunicações</li>
+                                </ul>
+                                
+                                <h4>Adaptações para Telecomunicações</h4>
+                                <ul>
+                                    <li>Pipelines com etapas específicas para validação de conformidade regulatória</li>
+                                    <li>Integração com emuladores de rede para testes automatizados</li>
+                                    <li>Ambientes de homologação que replicam condições reais de rede</li>
+                                    <li>Ferramentas de análise estática com regras específicas para sistemas críticos</li>
+                                    <li>Automação de documentação técnica exigida por reguladores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-monitoramento" class="tab-panel">
+                        <div class="practice-card" data-id="ferramentas-3" data-categories="visibilidade automacao">
+                            <div class="practice-card-header">
+                                <span>Ferramentas de Monitoramento e Observabilidade</span>
+                                <span class="badge badge-advanced">Avançada</span>
+                            </div>
+                            <div class="practice-card-body">
+                                <h4>Descrição</h4>
+                                <p>Soluções para monitoramento em tempo real, observabilidade e análise de dados operacionais, permitindo detecção proativa de problemas, análise de causa raiz e melhoria contínua em ambientes complexos de telecomunicações.</p>
+                                
+                                <h4>Ferramentas Recomendadas</h4>
+                                <ul>
+                                    <li><strong>Prometheus + Grafana:</strong> Para monitoramento de métricas técnicas com dashboards personalizados para KPIs de telecomunicações</li>
+                                    <li><strong>Elastic Stack (ELK):</strong> Para análise de logs centralizada de múltiplos sistemas e equipamentos de rede</li>
+                                    <li><strong>Dynatrace:</strong> Para APM (Application Performance Monitoring) com IA para detecção de anomalias</li>
+                                    <li><strong>Splunk:</strong> Para correlação avançada de eventos em ambientes complexos</li>
+                                    <li><strong>Datadog:</strong> Para monitoramento unificado de infraestrutura, aplicações e rede</li>
+                                </ul>
+                                
+                                <h4>Adaptações para Telecomunicações</h4>
+                                <ul>
+                                    <li>Integrações com sistemas de gerenciamento de rede (NMS)</li>
+                                    <li>Dashboards específicos para métricas de qualidade de serviço (QoS)</li>
+                                    <li>Alertas inteligentes baseados em padrões de tráfego e comportamento de rede</li>
+                                    <li>Correlação entre eventos de aplicação e eventos de rede</li>
+                                    <li>Visualizações geoespaciais para análise de problemas regionais</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas por Categoria -->
+            <h2 class="section-title">Ferramentas Essenciais por Categoria</h2>
+            
+            <div class="filters-container">
+                <div class="filters-title">Filtrar por:</div>
+                <div class="filters-options">
+                    <div class="filter-option active" data-filter="all">Todas</div>
+                    <div class="filter-option" data-filter="colaboracao">Colaboração</div>
+                    <div class="filter-option" data-filter="automacao">Automação</div>
+                    <div class="filter-option" data-filter="visibilidade">Visibilidade</div>
+                    <div class="filter-option" data-filter="integracao">Integração</div>
+                </div>
+            </div>
+            
+            <div class="practices-grid">
+                <div class="practice-card" data-id="ferramentas-4" data-categories="colaboracao visibilidade">
+                    <div class="practice-card-header">
+                        <span>Ferramentas de Colaboração</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Soluções que facilitam a comunicação, colaboração e compartilhamento de conhecimento entre equipes multidisciplinares, especialmente em ambientes distribuídos ou híbridos.</p>
+                        
+                        <h4>Ferramentas Recomendadas</h4>
+                        <ul>
+                            <li><strong>Microsoft Teams:</strong> Para comunicação integrada com ecossistema Microsoft</li>
+                            <li><strong>Slack:</strong> Para comunicação ágil com integrações extensivas</li>
+                            <li><strong>Confluence:</strong> Para documentação colaborativa e gestão de conhecimento</li>
+                            <li><strong>Miro:</strong> Para quadros visuais colaborativos e design thinking</li>
+                            <li><strong>Notion:</strong> Para documentação flexível e organização de conhecimento</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Essenciais para conectar equipes técnicas especializadas com áreas de negócio, facilitando a colaboração em projetos complexos que envolvem múltiplos domínios de conhecimento.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="ferramentas-5" data-categories="automacao integracao">
+                    <div class="practice-card-header">
+                        <span>Ferramentas de Automação de Testes</span>
+                        <span class="badge badge-popular">Popular</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Soluções para automação de testes em múltiplos níveis (unitário, integração, sistema, aceitação), adaptadas para os desafios específicos de sistemas de telecomunicações.</p>
+                        
+                        <h4>Ferramentas Recomendadas</h4>
+                        <ul>
+                            <li><strong>Selenium Grid:</strong> Para testes de interface web em portais de autoatendimento</li>
+                            <li><strong>Postman/Newman:</strong> Para testes automatizados de APIs de serviços</li>
+                            <li><strong>JMeter:</strong> Para testes de performance e carga em sistemas críticos</li>
+                            <li><strong>Robot Framework:</strong> Para testes de aceitação com keywords específicas para telecom</li>
+                            <li><strong>Cucumber:</strong> Para testes BDD com linguagem natural para requisitos regulatórios</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Fundamentais para garantir a qualidade e confiabilidade de sistemas críticos, reduzindo riscos em atualizações e permitindo ciclos mais rápidos de entrega com segurança.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="ferramentas-6" data-categories="visibilidade automacao">
+                    <div class="practice-card-header">
+                        <span>Ferramentas de Gestão de Infraestrutura</span>
+                        <span class="badge badge-new">Nova</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Soluções para gerenciamento, automação e monitoramento de infraestrutura de TI e rede, permitindo abordagens de Infraestrutura como Código (IaC) e operações ágeis.</p>
+                        
+                        <h4>Ferramentas Recomendadas</h4>
+                        <ul>
+                            <li><strong>Terraform:</strong> Para provisionamento declarativo de infraestrutura</li>
+                            <li><strong>Ansible:</strong> Para configuração e automação de sistemas</li>
+                            <li><strong>Kubernetes:</strong> Para orquestração de contêineres em ambientes de microserviços</li>
+                            <li><strong>Puppet/Chef:</strong> Para gerenciamento de configuração em larga escala</li>
+                            <li><strong>CloudFormation/ARM Templates:</strong> Para IaC em ambientes de nuvem específicos</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Essenciais para modernizar a gestão de infraestrutura complexa, permitindo maior agilidade, consistência e rastreabilidade em ambientes críticos de telecomunicações.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="ferramentas-7" data-categories="integracao visibilidade">
+                    <div class="practice-card-header">
+                        <span>Ferramentas de Integração e APIs</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Soluções para desenvolvimento, gestão, monitoramento e teste de APIs, facilitando a integração entre sistemas legados e novos, internos e externos, críticos para ecossistemas de telecomunicações.</p>
+                        
+                        <h4>Ferramentas Recomendadas</h4>
+                        <ul>
+                            <li><strong>Apigee:</strong> Para gestão completa do ciclo de vida de APIs</li>
+                            <li><strong>Kong:</strong> Para gateway de API de alto desempenho</li>
+                            <li><strong>MuleSoft:</strong> Para integração e gestão de APIs com foco em conectividade</li>
+                            <li><strong>Swagger/OpenAPI:</strong> Para documentação e design de APIs</li>
+                            <li><strong>Postman:</strong> Para desenvolvimento, teste e colaboração em APIs</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Fundamentais para criar abstrações sobre sistemas legados complexos, expor funcionalidades de rede como serviços e integrar o ecossistema de parceiros e fornecedores.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="ferramentas-8" data-categories="visibilidade colaboracao">
+                    <div class="practice-card-header">
+                        <span>Ferramentas de Analytics e Dashboards</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Soluções para análise de dados, visualização e criação de dashboards, permitindo tomada de decisão baseada em dados e visibilidade sobre métricas de negócio e técnicas.</p>
+                        
+                        <h4>Ferramentas Recomendadas</h4>
+                        <ul>
+                            <li><strong>Power BI:</strong> Para dashboards interativos e análises de negócio</li>
+                            <li><strong>Tableau:</strong> Para visualizações avançadas e análises complexas</li>
+                            <li><strong>Grafana:</strong> Para dashboards técnicos em tempo real</li>
+                            <li><strong>Looker:</strong> Para análises de dados empresariais</li>
+                            <li><strong>Kibana:</strong> Para visualização e exploração de logs e eventos</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Essenciais para criar visibilidade sobre KPIs técnicos e de negócio, analisar tendências de uso, monitorar qualidade de serviço e identificar oportunidades de melhoria.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="practice-card" data-id="ferramentas-9" data-categories="automacao integracao">
+                    <div class="practice-card-header">
+                        <span>Ferramentas de Automação de Processos</span>
+                        <span class="badge badge-advanced">Avançada</span>
+                    </div>
+                    <div class="practice-card-body">
+                        <h4>Descrição</h4>
+                        <p>Soluções para automação de processos de negócio e operacionais, incluindo RPA (Robotic Process Automation) e plataformas low-code/no-code para criação rápida de aplicações e fluxos de trabalho.</p>
+                        
+                        <h4>Ferramentas Recomendadas</h4>
+                        <ul>
+                            <li><strong>UiPath:</strong> Para automação robótica de processos administrativos</li>
+                            <li><strong>Power Automate:</strong> Para automação de fluxos de trabalho no ecossistema Microsoft</li>
+                            <li><strong>Zapier:</strong> Para integrações simples entre aplicações SaaS</li>
+                            <li><strong>Camunda:</strong> Para automação de processos de negócio complexos</li>
+                            <li><strong>OutSystems/Mendix:</strong> Para desenvolvimento low-code de aplicações de negócio</li>
+                        </ul>
+                        
+                        <h4>Aplicação em Telecomunicações</h4>
+                        <p>Valiosas para automatizar processos regulatórios, ativações de serviço, atendimento ao cliente e outras operações repetitivas que consomem tempo significativo das equipes.</p>
+                    </div>
+                    <div class="practice-card-footer">
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagrama de Integração entre Ferramentas -->
+            <div class="diagram-section">
+                <h2 class="section-title">Diagrama de Integração entre Ferramentas</h2>
+                
+                <div class="diagram">
+                    <h3>Ecossistema de Ferramentas Ágeis para Telecomunicações</h3>
+                    <div class="diagram-content">
+                        <div class="diagram-image">
+                            <!-- Representação visual da integração entre ferramentas -->
+                            <svg width="800" height="500" viewBox="0 0 800 500">
+                                <!-- Fundo -->
+                                <rect x="0" y="0" width="800" height="500" fill="#f5f5f5" rx="10" ry="10" />
+                                
+                                <!-- Título -->
+                                <text x="400" y="40" font-size="24" text-anchor="middle" fill="#00B388" font-weight="bold">Ecossistema de Ferramentas Ágeis para Telecomunicações</text>
+                                
+                                <!-- Camada de Gerenciamento -->
+                                <rect x="50" y="80" width="700" height="80" fill="#f9f9f9" stroke="#ddd" stroke-width="1" rx="5" ry="5" />
+                                <text x="400" y="110" font-size="16" text-anchor="middle" font-weight="bold">Camada de Gerenciamento</text>
+                                
+                                <!-- Ferramentas de Gerenciamento -->
+                                <rect x="80" y="130" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="130" y="150" font-size="12" text-anchor="middle" fill="white">Jira</text>
+                                
+                                <rect x="200" y="130" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="250" y="150" font-size="12" text-anchor="middle" fill="white">Azure DevOps</text>
+                                
+                                <rect x="320" y="130" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="370" y="150" font-size="12" text-anchor="middle" fill="white">ServiceNow</text>
+                                
+                                <rect x="440" y="130" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="490" y="150" font-size="12" text-anchor="middle" fill="white">Monday.com</text>
+                                
+                                <rect x="560" y="130" width="160" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="640" y="150" font-size="12" text-anchor="middle" fill="white">Planview AgilePlace</text>
+                                
+                                <!-- Camada de Desenvolvimento -->
+                                <rect x="50" y="180" width="700" height="80" fill="#f9f9f9" stroke="#ddd" stroke-width="1" rx="5" ry="5" />
+                                <text x="400" y="210" font-size="16" text-anchor="middle" font-weight="bold">Camada de Desenvolvimento e CI/CD</text>
+                                
+                                <!-- Ferramentas de Desenvolvimento -->
+                                <rect x="80" y="230" width="100" height="30" fill="#C94A4A" rx="5" ry="5" opacity="0.8" />
+                                <text x="130" y="250" font-size="12" text-anchor="middle" fill="white">GitLab CI/CD</text>
+                                
+                                <rect x="200" y="230" width="100" height="30" fill="#C94A4A" rx="5" ry="5" opacity="0.8" />
+                                <text x="250" y="250" font-size="12" text-anchor="middle" fill="white">Jenkins</text>
+                                
+                                <rect x="320" y="230" width="100" height="30" fill="#C94A4A" rx="5" ry="5" opacity="0.8" />
+                                <text x="370" y="250" font-size="12" text-anchor="middle" fill="white">Ansible Tower</text>
+                                
+                                <rect x="440" y="230" width="100" height="30" fill="#C94A4A" rx="5" ry="5" opacity="0.8" />
+                                <text x="490" y="250" font-size="12" text-anchor="middle" fill="white">Terraform</text>
+                                
+                                <rect x="560" y="230" width="100" height="30" fill="#C94A4A" rx="5" ry="5" opacity="0.8" />
+                                <text x="610" y="250" font-size="12" text-anchor="middle" fill="white">SonarQube</text>
+                                
+                                <!-- Camada de Testes -->
+                                <rect x="50" y="280" width="700" height="80" fill="#f9f9f9" stroke="#ddd" stroke-width="1" rx="5" ry="5" />
+                                <text x="400" y="310" font-size="16" text-anchor="middle" font-weight="bold">Camada de Testes e Qualidade</text>
+                                
+                                <!-- Ferramentas de Testes -->
+                                <rect x="80" y="330" width="100" height="30" fill="#666" rx="5" ry="5" opacity="0.8" />
+                                <text x="130" y="350" font-size="12" text-anchor="middle" fill="white">Selenium Grid</text>
+                                
+                                <rect x="200" y="330" width="100" height="30" fill="#666" rx="5" ry="5" opacity="0.8" />
+                                <text x="250" y="350" font-size="12" text-anchor="middle" fill="white">Postman</text>
+                                
+                                <rect x="320" y="330" width="100" height="30" fill="#666" rx="5" ry="5" opacity="0.8" />
+                                <text x="370" y="350" font-size="12" text-anchor="middle" fill="white">JMeter</text>
+                                
+                                <rect x="440" y="330" width="100" height="30" fill="#666" rx="5" ry="5" opacity="0.8" />
+                                <text x="490" y="350" font-size="12" text-anchor="middle" fill="white">Robot Framework</text>
+                                
+                                <rect x="560" y="330" width="100" height="30" fill="#666" rx="5" ry="5" opacity="0.8" />
+                                <text x="610" y="350" font-size="12" text-anchor="middle" fill="white">Cucumber</text>
+                                
+                                <!-- Camada de Monitoramento -->
+                                <rect x="50" y="380" width="700" height="80" fill="#f9f9f9" stroke="#ddd" stroke-width="1" rx="5" ry="5" />
+                                <text x="400" y="410" font-size="16" text-anchor="middle" font-weight="bold">Camada de Monitoramento e Observabilidade</text>
+                                
+                                <!-- Ferramentas de Monitoramento -->
+                                <rect x="80" y="430" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="130" y="450" font-size="12" text-anchor="middle" fill="white">Prometheus</text>
+                                
+                                <rect x="200" y="430" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="250" y="450" font-size="12" text-anchor="middle" fill="white">Elastic Stack</text>
+                                
+                                <rect x="320" y="430" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="370" y="450" font-size="12" text-anchor="middle" fill="white">Dynatrace</text>
+                                
+                                <rect x="440" y="430" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="490" y="450" font-size="12" text-anchor="middle" fill="white">Splunk</text>
+                                
+                                <rect x="560" y="430" width="100" height="30" fill="#00B388" rx="5" ry="5" opacity="0.8" />
+                                <text x="610" y="450" font-size="12" text-anchor="middle" fill="white">Datadog</text>
+                                
+                                <!-- Conexões entre camadas -->
+                                <!-- Gerenciamento -> Desenvolvimento -->
+                                <line x1="130" y1="160" x2="130" y2="230" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="250" y1="160" x2="250" y2="230" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="370" y1="160" x2="370" y2="230" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <!-- Desenvolvimento -> Testes -->
+                                <line x1="130" y1="260" x2="130" y2="330" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="250" y1="260" x2="250" y2="330" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="370" y1="260" x2="370" y2="330" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="490" y1="260" x2="490" y2="330" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <!-- Testes -> Monitoramento -->
+                                <line x1="130" y1="360" x2="130" y2="430" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="250" y1="360" x2="250" y2="430" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="370" y1="360" x2="370" y2="430" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="490" y1="360" x2="490" y2="430" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                <line x1="610" y1="360" x2="610" y2="430" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <!-- Conexões horizontais -->
+                                <line x1="180" y1="145" x2="200" y2="145" stroke="#666" stroke-width="1" />
+                                <line x1="300" y1="145" x2="320" y2="145" stroke="#666" stroke-width="1" />
+                                <line x1="420" y1="145" x2="440" y2="145" stroke="#666" stroke-width="1" />
+                                <line x1="540" y1="145" x2="560" y2="145" stroke="#666" stroke-width="1" />
+                                
+                                <line x1="180" y1="245" x2="200" y2="245" stroke="#666" stroke-width="1" />
+                                <line x1="300" y1="245" x2="320" y2="245" stroke="#666" stroke-width="1" />
+                                <line x1="420" y1="245" x2="440" y2="245" stroke="#666" stroke-width="1" />
+                                <line x1="540" y1="245" x2="560" y2="245" stroke="#666" stroke-width="1" />
+                                
+                                <line x1="180" y1="345" x2="200" y2="345" stroke="#666" stroke-width="1" />
+                                <line x1="300" y1="345" x2="320" y2="345" stroke="#666" stroke-width="1" />
+                                <line x1="420" y1="345" x2="440" y2="345" stroke="#666" stroke-width="1" />
+                                <line x1="540" y1="345" x2="560" y2="345" stroke="#666" stroke-width="1" />
+                                
+                                <line x1="180" y1="445" x2="200" y2="445" stroke="#666" stroke-width="1" />
+                                <line x1="300" y1="445" x2="320" y2="445" stroke="#666" stroke-width="1" />
+                                <line x1="420" y1="445" x2="440" y2="445" stroke="#666" stroke-width="1" />
+                                <line x1="540" y1="445" x2="560" y2="445" stroke="#666" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <div class="diagram-description">
+                            <p>O diagrama apresenta um ecossistema integrado de ferramentas ágeis para empresas de telecomunicações, organizado em quatro camadas principais que se comunicam entre si para formar um fluxo contínuo de valor.</p>
+                            <p>Na camada superior, as Ferramentas de Gerenciamento fornecem visibilidade e coordenação do trabalho, conectando-se com a Camada de Desenvolvimento e CI/CD, onde o código é versionado, integrado e entregue continuamente.</p>
+                            <p>A Camada de Testes e Qualidade garante que as entregas atendam aos requisitos funcionais, de desempenho e regulatórios específicos do setor de telecomunicações, enquanto a Camada de Monitoramento e Observabilidade fornece feedback contínuo sobre o comportamento dos sistemas em produção.</p>
+                            <p>As integrações entre ferramentas de diferentes camadas (representadas pelas linhas tracejadas verticais) são essenciais para criar um fluxo de informação contínuo, permitindo rastreabilidade desde os requisitos até o monitoramento em produção, e feedback desde a operação até o planejamento.</p>
+                            <p>Este ecossistema integrado permite que as empresas de telecomunicações equilibrem a necessidade de agilidade com os requisitos de confiabilidade, conformidade e segurança característicos do setor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case de Sucesso -->
+            <div class="case-study-section">
+                <h2 class="section-title">Case de Sucesso</h2>
+                
+                <div class="case-study">
+                    <h3>Transformação de Ferramentas na TIM Brasil</h3>
+                    <div class="case-study-content">
+                        <div class="case-study-text">
+                            <p>A TIM Brasil enfrentava desafios significativos com seu ecossistema fragmentado de ferramentas, que dificultava a colaboração entre equipes, criava silos de informação e limitava a visibilidade sobre o progresso do trabalho e a qualidade dos serviços.</p>
+                            
+                            <h4>Desafio</h4>
+                            <p>A operadora utilizava mais de 30 ferramentas diferentes e desconectadas para gerenciamento de projetos, desenvolvimento, testes e monitoramento. Esta fragmentação resultava em duplicação de informações, dificuldade de rastreabilidade e ciclos longos de feedback, impactando a velocidade de entrega e a qualidade dos serviços.</p>
+                            
+                            <h4>Solução</h4>
+                            <ul>
+                                <li>Implementação de um ecossistema integrado de ferramentas ágeis</li>
+                                <li>Adoção do Azure DevOps como plataforma central para gerenciamento de trabalho e CI/CD</li>
+                                <li>Integração com ferramentas especializadas para telecomunicações via APIs</li>
+                                <li>Implementação de uma plataforma de observabilidade unificada com Elastic Stack</li>
+                                <li>Criação de dashboards executivos com Power BI conectados às ferramentas operacionais</li>
+                                <li>Automação de testes de rede com frameworks personalizados</li>
+                            </ul>
+                            
+                            <h4>Resultados</h4>
+                            <ul>
+                                <li>Redução de 40% no tempo de ciclo para entrega de novos serviços</li>
+                                <li>Aumento de 60% na cobertura de testes automatizados</li>
+                                <li>Redução de 50% no tempo médio de detecção de incidentes (MTTD)</li>
+                                <li>Melhoria de 35% na colaboração entre equipes técnicas e de negócio</li>
+                                <li>Economia de 25% em licenciamento de ferramentas redundantes</li>
+                                <li>Visibilidade em tempo real sobre KPIs técnicos e de negócio</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-image">
+                            <!-- Representação visual do case de sucesso -->
+                            <svg width="350" height="350" viewBox="0 0 350 350">
+                                <!-- Fundo -->
+                                <rect x="0" y="0" width="350" height="350" fill="#f9f9f9" rx="10" ry="10" />
+                                
+                                <!-- Título -->
+                                <text x="175" y="40" font-size="18" text-anchor="middle" fill="#C94A4A" font-weight="bold">Impacto da Integração de Ferramentas</text>
+                                
+                                <!-- Gráfico de antes/depois -->
+                                <line x1="50" y1="270" x2="300" y2="270" stroke="#666" stroke-width="1" />
+                                <line x1="50" y1="270" x2="50" y2="70" stroke="#666" stroke-width="1" />
+                                
+                                <!-- Barras "Antes" -->
+                                <rect x="80" y="150" width="40" height="120" fill="#ddd" />
+                                <rect x="150" y="190" width="40" height="80" fill="#ddd" />
+                                <rect x="220" y="120" width="40" height="150" fill="#ddd" />
+                                
+                                <!-- Barras "Depois" -->
+                                <rect x="120" y="210" width="40" height="60" fill="#C94A4A" />
+                                <rect x="190" y="110" width="40" height="160" fill="#C94A4A" />
+                                <rect x="260" y="195" width="40" height="75" fill="#C94A4A" />
+                                
+                                <!-- Rótulos -->
+                                <text x="100" y="290" font-size="12" text-anchor="middle">Tempo de</text>
+                                <text x="100" y="305" font-size="12" text-anchor="middle">Ciclo</text>
+                                
+                                <text x="170" y="290" font-size="12" text-anchor="middle">Cobertura</text>
+                                <text x="170" y="305" font-size="12" text-anchor="middle">de Testes</text>
+                                
+                                <text x="240" y="290" font-size="12" text-anchor="middle">Tempo de</text>
+                                <text x="240" y="305" font-size="12" text-anchor="middle">Detecção</text>
+                                
+                                <!-- Legendas -->
+                                <rect x="80" y="330" width="15" height="15" fill="#ddd" />
+                                <text x="100" y="342" font-size="12" text-anchor="start">Antes</text>
+                                
+                                <rect x="180" y="330" width="15" height="15" fill="#C94A4A" />
+                                <text x="200" y="342" font-size="12" text-anchor="start">Depois</text>
+                                
+                                <!-- Eixo Y -->
+                                <text x="45" y="75" font-size="10" text-anchor="end">100%</text>
+                                <text x="45" y="170" font-size="10" text-anchor="end">50%</text>
+                                <text x="45" y="270" font-size="10" text-anchor="end">0%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">Biblioteca de Práticas Ágeis</div>
+                    <div class="footer-links">
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 Algar Telecom. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elementos flutuantes -->
+    <div class="floating-actions">
+        <!-- Botões serão adicionados via JavaScript -->
+    </div>
+
+    <!-- Indicador de progresso de leitura -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>
